@@ -1,7 +1,7 @@
 # Day 1 assignments
-Assignments are written in english out of habit.
+These assignments were given in the morning and was expected to be finished by the end of the day.  Assignments are written in english out of habit.
 
-Uppgifterna är skrivna på engelska, vanesak.
+Dessa uppgifter var givna på förmiddagen och förväntades vara klara i slutet av dagen. Uppgifterna är skrivna på engelska, vanesak.
 ## Uppgift 1: Ålderskategorier
 Skapa ett program som läser in en persons ålder och bestämmer vilken kategori personen
 tillhör:
@@ -47,5 +47,6 @@ Utveckla en enkel bankkontosimulator som:
 * Kontrollerar att belopp är positivt
 * Uppdaterar och visar nytt saldo
 * Använder boolean-variabler för att hålla reda på om transaktionen lyckades
+
 Varje uppgift tränar olika aspekter: datatyper (int, double, char, String, boolean),
 villkorssatser (if-else, switch), input-validering och logiskt tänkande.
