@@ -35,7 +35,7 @@ public class Main {
     }
 
     public static void assignment1() {
-        System.out.println("-Assignment 1-");
+        System.out.println("\n-Assignment 1: Age categories-");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Specify age: ");
         int age = scanner.nextInt();
@@ -51,18 +51,36 @@ public class Main {
     }
 
     public static void assignment2() {
-        System.out.println("-Assignment 2-");
+        System.out.println("\n-Assignment 2: Score to grade converter-");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Your test score (0-100): ");
+        double score = scanner.nextDouble();
+
+        if (score < 0 || score > 100)
+            System.out.println("Invalid score");
+        else {
+            if (score < 60)
+                System.out.println("Grade: F");
+            else if (score >= 60 && score <= 69)
+                System.out.println("Grade: D");
+            else if (score >= 70 && score <= 79)
+                System.out.println("Grade: C");
+            else if (score >= 80 && score <= 89)
+                System.out.println("Grade: B");
+            else if (score >= 90)
+                System.out.println("Grade: A");
+        }
     }
 
     public static void assignment3() {
-        System.out.println("-Assignment 3-");
+        System.out.println("\n-Assignment 3-");
     }
 
     public static void assignment4() {
-        System.out.println("-Assignment 4-");
+        System.out.println("\n-Assignment 4-");
     }
 
     public static void assignment5() {
-        System.out.println("-Assignment 5-");
+        System.out.println("\n-Assignment 5-");
     }
 }
