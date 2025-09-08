@@ -96,22 +96,22 @@ public class Main {
 
             switch (operator) {
                 case '+':
-                    System.out.println(x + " + " + y + " = " + (x + y));
+                    System.out.printf("%.2f + %.2f = %.2f", x, y, (x + y));
                     invalidOperation = false;
                     break;
                 case '-':
-                    System.out.println(x + " - " + y + " = " + (x - y));
+                    System.out.printf("%.2f - %.2f = %.2f", x, y, (x - y));
                     invalidOperation = false;
                     break;
                 case '*':
-                    System.out.println(x + " * " + y + " = " + (x * y));
+                    System.out.printf("%.2f * %.2f = %.2f", x, y, (x * y));
                     invalidOperation = false;
                     break;
                 case '/':
                     if (y == 0)
                         System.out.println("Cannot divide by zero!");
                     else
-                        System.out.println(x + " / " + y + " = " + (x / y));
+                        System.out.printf("%.2f / %.2f = %.2f", x, y, (x / y));
                     invalidOperation = false;
                     break;
                 default:
@@ -126,27 +126,27 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         double c;
         double f;
-        System.out.print("Select temperature unit to convert to (C or F): ");
+        System.out.print("Select temperature unit to convert to (\"C\" or \"F\"): ");
         char tempUnit = scanner.next().charAt(0);
 
         switch (tempUnit) {
             case 'f': // Celsius -> Fahrenheit
             case 'F':
-                System.out.print("What is the current temperature (C): ");
+                System.out.print("What is the current temperature (°C): ");
                 c = scanner.nextDouble();
                 f = c * (9.0f/5.0f) + 32.0f;
 
-                System.out.println(c + " °C");
-                System.out.println(f + " °F");
+                System.out.printf("%.2f °C\n", c);
+                System.out.printf("%.2f °F\n", f);
                 break;
             case 'c': // Fahrenheit -> Celsius
             case 'C':
-                System.out.print("What is the current temperature (F): ");
+                System.out.print("What is the current temperature (°F): ");
                 f = scanner.nextDouble();
                 c = (f - 32.0f) * 5.0f/9.0f;
 
-                System.out.println(c + " °C");
-                System.out.println(f + " °F");
+                System.out.printf("%.2f °C\n", c);
+                System.out.printf("%.2f °F\n", f);
                 break;
             default:
                 System.out.println("Invalid selection");
@@ -167,5 +167,7 @@ public class Main {
 
     public static void assignment5() {
         System.out.println("\n-Assignment 5: Banking simulator-");
+
+
     }
 }
