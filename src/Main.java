@@ -96,19 +96,22 @@ public class Main {
 
             switch (operator) {
                 case '+':
-                    System.out.println("X + Y = " + (x + y));
+                    System.out.println(x + " + " + y + " = " + (x + y));
                     invalidOperation = false;
                     break;
                 case '-':
-                    System.out.println("X - Y = " + (x - y));
+                    System.out.println(x + " - " + y + " = " + (x - y));
                     invalidOperation = false;
                     break;
                 case '*':
-                    System.out.println("X * Y = " + (x * y));
+                    System.out.println(x + " * " + y + " = " + (x * y));
                     invalidOperation = false;
                     break;
                 case '/':
-                    System.out.println("X / Y = " + (x / y));
+                    if (y == 0)
+                        System.out.println("Cannot divide by zero!");
+                    else
+                        System.out.println(x + " / " + y + " = " + (x / y));
                     invalidOperation = false;
                     break;
                 default:
@@ -121,8 +124,8 @@ public class Main {
         System.out.println("\n-Assignment 4: Temperature converter-");
 
         Scanner scanner = new Scanner(System.in);
-        double c = -1;
-        double f = -1;
+        double c;
+        double f;
         System.out.print("Select temperature unit to convert to (C or F): ");
         char tempUnit = scanner.next().charAt(0);
 
@@ -147,6 +150,7 @@ public class Main {
                 break;
             default:
                 System.out.println("Invalid selection");
+                return;
         }
 
         if (c < 0)
