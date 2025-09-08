@@ -9,6 +9,7 @@ tillhör:
 * 13-19: "Tonåring"
 * 20-64: "Vuxen"
 * 65 och över: "Senior"
+
 Använd int-variabel för ålder och if-else-satser för att skriva ut rätt kategori.
 ## Uppgift 2: Betygskonverterare
 Skriv ett program som konverterar poäng (0-100) till bokstavsbetyg:
@@ -17,6 +18,7 @@ Skriv ett program som konverterar poäng (0-100) till bokstavsbetyg:
 * 70-79: C
 * 60-69: D
 * Under 60: F
+
 Använd double för poäng och implementera med if-else if-kedja. Lägg till validering som
 kontrollerar att poängen är mellan 0-100.
 ## Uppgift 3: Enkel kalkylator
