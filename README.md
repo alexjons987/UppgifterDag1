@@ -27,8 +27,7 @@ Programmet ska:
 * Använda switch-sats för att välja operation
 * Hantera division med noll som specialfall
 * Skriva ut resultatet med lämplig formatering
-## Uppgift 4: Temperaturomvandlare med
-rekommendationer
+## Uppgift 4: Temperaturomvandlare med rekommendationer
 Bygg ett program som konverterar mellan Celsius och Fahrenheit och ger
 klädrekommendationer:
 * Låt användaren välja konverteringsriktning (C -> F eller F -> C)

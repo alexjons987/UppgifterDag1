@@ -5,6 +5,11 @@ public class Main {
         boolean flag = true;
         while (flag) {
             Scanner scanner = new Scanner(System.in);
+            System.out.println("\n1. Age categories");
+            System.out.println("2. Score to grade converter");
+            System.out.println("3. Simple calculator");
+            System.out.println("4. Temperature converter");
+            System.out.println("5. Banking simulator");
             System.out.print("Choose assignment 1-5 (0 = exit): ");
             int chosenAssignment = scanner.nextInt();
 
@@ -36,6 +41,7 @@ public class Main {
 
     public static void assignment1() {
         System.out.println("\n-Assignment 1: Age categories-");
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Specify age: ");
         int age = scanner.nextInt();
@@ -52,6 +58,7 @@ public class Main {
 
     public static void assignment2() {
         System.out.println("\n-Assignment 2: Score to grade converter-");
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Your test score (0-100): ");
         double score = scanner.nextDouble();
@@ -73,14 +80,47 @@ public class Main {
     }
 
     public static void assignment3() {
-        System.out.println("\n-Assignment 3-");
+        System.out.println("\n-Assignment 3: Simple calculator-");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("X = ");
+        double x = scanner.nextDouble();
+        System.out.print("Y = ");
+        double y = scanner.nextDouble();
+
+        boolean invalidOperation = true;
+        while (invalidOperation) {
+            System.out.print("Operator (+, -, *, /): ");
+            char operator = scanner.next().charAt(0);
+
+            switch (operator) {
+                case '+':
+                    System.out.println("X + Y = " + (x + y));
+                    invalidOperation = false;
+                    break;
+                case '-':
+                    System.out.println("X - Y = " + (x - y));
+                    invalidOperation = false;
+                    break;
+                case '*':
+                    System.out.println("X * Y = " + (x * y));
+                    invalidOperation = false;
+                    break;
+                case '/':
+                    System.out.println("X / Y = " + (x / y));
+                    invalidOperation = false;
+                    break;
+                default:
+                    System.out.println("Invalid operator");
+            }
+        }
     }
 
     public static void assignment4() {
-        System.out.println("\n-Assignment 4-");
+        System.out.println("\n-Assignment 4: Temperature converter-");
     }
 
     public static void assignment5() {
-        System.out.println("\n-Assignment 5-");
+        System.out.println("\n-Assignment 5: Banking simulator-");
     }
 }
