@@ -10,7 +10,7 @@ public class Uppgift5 {
 
         boolean flag = true;
         while (flag) {
-            System.out.println("\n\nCurrent balance: " + balance + currency);
+            System.out.println("\nCurrent balance: " + balance + currency);
             System.out.print("Transaction type (\"withdraw\", \"deposit\" or \"exit\"): ");
             String transactionType = scanner.nextLine();
 
@@ -21,7 +21,7 @@ public class Uppgift5 {
                     scanner.nextLine(); // Process trailing newline from nextDouble()
 
                     if (withdrawAmount > balance) {
-                        System.out.printf("Error! %f%s is more than your balance of %f%s!", withdrawAmount, currency, balance, currency);
+                        System.out.printf("Error! %f%s is more than your balance of %f%s!\n", withdrawAmount, currency, balance, currency);
                     } else if (!isPositive(withdrawAmount)) {
                         System.out.println("Error! Unable to withdraw negative values!");
                     } else {
