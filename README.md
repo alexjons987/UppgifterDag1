@@ -44,7 +44,7 @@ Utveckla en enkel bankkontosimulator som:
 * Läser in transaktionstyp (String: "insättning" eller "uttag")
 * Läser in belopp (double)
 * Kontrollerar att uttag inte överstiger saldot
-● Kontrollerar att belopp är positivt
+* Kontrollerar att belopp är positivt
 * Uppdaterar och visar nytt saldo
 * Använder boolean-variabler för att hålla reda på om transaktionen lyckades
 Varje uppgift tränar olika aspekter: datatyper (int, double, char, String, boolean),
