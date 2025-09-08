@@ -1,4 +1,7 @@
 # Day 1 assignments
+Assignments are written in english out of habit.
+
+Uppgifterna är skrivna på engelska, vanesak.
 ## Uppgift 1: Ålderskategorier
 Skapa ett program som läser in en persons ålder och bestämmer vilken kategori personen
 tillhör:
